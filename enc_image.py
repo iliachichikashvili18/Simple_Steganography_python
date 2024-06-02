@@ -1,7 +1,7 @@
 from PIL import Image
 
 # open the image
-img = Image.open("kai.png")
+img = Image.open(image_path)
 
 # load the pixel map
 pixel_map = img.load()
