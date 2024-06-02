@@ -2,8 +2,8 @@ from PIL import Image
 
 def decrypt_image(original_image_path, encrypted_image_path):
     # open the original and encrypted images
-    original_image = Image.open("xdd.jpg")
-    encrypted_image = Image.open("zd.png")
+    original_image = Image.open(original_image_path)
+    encrypted_image = Image.open(encrypted_image_path)
 
     # load pixel maps
     original_pixel_map = original_image.load()
@@ -32,7 +32,7 @@ def decrypt_image(original_image_path, encrypted_image_path):
     return decrypted_message
 
 # usage
-original_image_path = "xdd.jpg"
-encrypted_image_path = "zd.png"
+original_image_path = "original_image_path"
+encrypted_image_path = "encrypted_image_path"
 decrypted_message = decrypt_image(original_image_path, encrypted_image_path)
 print("Decrypted Message:", decrypted_message)
