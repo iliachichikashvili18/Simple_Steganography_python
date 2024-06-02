@@ -1,3 +1,3 @@
 # Simple_Steganography_python
 
-**Dependencies: PIL library**
+**Dependencies: PIL (pillow) library**
